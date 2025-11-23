@@ -1,0 +1,16 @@
+# Netlify Redirects
+# https://docs.netlify.com/routing/redirects/
+
+# Redirect HTTP to HTTPS (Netlify does this automatically, but explicit is fine)
+# /   /   301!
+
+# Handle Next.js routing for SPA-like behavior (if using static export, but Next.js plugin handles this usually)
+# For standard Next.js on Netlify, you typically rely on the plugin. 
+# However, manual redirects can be added here.
+
+# Example: Redirect old paths to new ones
+# /old-path   /new-path   301
+
+# Allow Next.js to handle all other routes
+# /*  /index.html  200
+
